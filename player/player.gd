@@ -7,7 +7,7 @@ var screen_size
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	screen_size = get_viewport_rect().size
-	# hide() # Player is hidden when game starts.
+	hide() # Player is hidden when game starts.
 
 func _on_body_entered(body: Node2D) -> void:
 	hide() # Player disappears after being hit.
